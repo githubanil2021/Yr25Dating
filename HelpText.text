@@ -1,0 +1,18 @@
+1.Dotnet new sln
+2.dotnet new webapi -controllers -n API
+3.code . [for open VSCode]
+Ext->C# Dev Kit
+dotnet dev-certs https --check
+dotnet dev-certs https --clean
+dotnet dev-certs https --trust
+dotnet restore [after package include]
+DbContext->public class AppDbContext(DbContextOptions options) :DbContext(options)
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+});    
+
+->dotnet ef migrations add Initial
+->dotnet new gitignore
+
