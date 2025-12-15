@@ -25,7 +25,8 @@ export class Register {
         console.log(response);
         this.cancel();
       },
-      error:error=>console.log(error) 
+      error:error=>console.log(error)
+
     })
 
   }
