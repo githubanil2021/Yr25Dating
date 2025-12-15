@@ -1,0 +1,11 @@
+    .nav-gradient {
+      background: linear-gradient(90deg, #0d6efd, #6f42c1);
+    }
+    .nav-gradient .nav-link,
+    .nav-gradient .navbar-brand {
+      color: white !important;
+    }
+    .nav-gradient .nav-link:hover {
+      color: #ffd966 !important;
+    }
+  

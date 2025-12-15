@@ -2,12 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { lastValueFrom } from 'rxjs';
+import { Nav } from "./layout/nav/nav";
 
 @Component({
   selector: 'app-root',
 
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  imports: [Nav]
 })
 export class App  implements OnInit {
   protected readonly title = signal('Dating App');
